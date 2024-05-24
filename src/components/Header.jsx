@@ -91,6 +91,7 @@ const Header = () => {
               <div key={link.id} className="p-2 ">
                 <Link
                   // className="w-full dark:bg-dark-secondary"
+                  onClick={() => setOpenNav(false)}
                   to={link.to}
                 >
                   {link.name}
