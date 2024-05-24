@@ -3,7 +3,7 @@ import skillData from "../data/skillData";
 
 const Skills = () => {
   return (
-    <div className="w-1/3">
+    <div className="w-1/3 portrait:w-full portrait:m-3">
       <div className="m-auto dark:text-white text-3xl font-bold">Skills</div>
       <div className="w-full ">
         {skillData.map((skill) => (

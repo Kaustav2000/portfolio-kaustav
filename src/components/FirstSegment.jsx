@@ -22,16 +22,14 @@ const FirstSegment = () => {
   };
 
   return (
-    <div className="flex mb-5 py-36 px-52">
-      <div className="w-1/2 space-y-2">
-        <div className="">
-          <div className="text-dark-primary dark:text-white">Hello, I'm</div>
-          <div className="text-dark-primary dark:text-white font-extrabold text-5xl drop-shadow-2xl">
-            KAUSTAV BHATTACHARYA
-          </div>
-          <div className="text-dark-primary dark:text-white text-2xl">
-            FRONT-END WEB DEVELOPER
-          </div>
+    <div className="flex flex-wrap-reverse mb-5 py-36 px-52 portrait:px-4">
+      <div className="w-1/2 space-y-2 portrait:w-full portrait:px-10">
+        <div className="text-dark-primary dark:text-white">Hello, I'm</div>
+        <div className="text-dark-primary dark:text-white font-extrabold text-5xl portrait:font-bold portrait:text-3xl drop-shadow-2xl">
+          KAUSTAV BHATTACHARYA
+        </div>
+        <div className="text-dark-primary dark:text-white text-2xl portrait:text-lg">
+          FRONT-END WEB DEVELOPER
         </div>
         <button
           onClick={onButtonClick}
@@ -64,11 +62,12 @@ const FirstSegment = () => {
           </a>
         </div>
       </div>
-      <div className=" w-1/2 flex justify-center items-center ">
+
+      <div className=" w-1/2 mb-10 m-auto flex justify-center items-center ">
         <img
           src={dp}
           alt="Profile pic"
-          className="h-64 rounded-full ring-4 ring-primary-dark dark:ring-white "
+          className="h-64 portrait:h-3/5 aspect-square rounded-full ring-4 ring-primary-dark dark:ring-white "
         />
       </div>
     </div>

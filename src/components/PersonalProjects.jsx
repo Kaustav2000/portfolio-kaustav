@@ -8,9 +8,12 @@ const PersonalProjects = () => {
       <div className="text-center mb-3 m-auto text-primary-dark dark:text-white text-3xl font-bold">
         Personal Projects
       </div>
-      <div className=" flex justify-between items-center">
-        {projectData.map((data) => (
-          <div className="w-60 min-h-80 p-2 m-auto shadow-2xl bg-slate-200 dark:bg-dark-secondary dark:shadow-none rounded-lg">
+      <div className=" flex flex-wrap  justify-between items-center">
+        {projectData.map((data, index) => (
+          <div
+            key={index}
+            className="w-60 min-h-80 p-2 my-7 m-auto shadow-2xl bg-slate-200 dark:bg-dark-secondary dark:shadow-none rounded-lg"
+          >
             <div className=" w-full overflow-clip rounded-md  ">
               <img src={data.imageUrl} alt="" />
             </div>

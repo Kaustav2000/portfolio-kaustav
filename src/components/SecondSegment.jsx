@@ -25,14 +25,17 @@ const data = [
 
 const SecondSegment = () => {
   return (
-    <div className="pb-10 px-28">
+    <div className="pb-10 px-28 portrait:px-5">
       <div className=" flex justify-center items-center text-4xl text-primary-dark dark:text-white font-bold">
         Things I Love
       </div>
-      <div className="flex justify-between items-center mt-10">
-        {data.map((el) => (
-          <div className="w-60 h-80 m-auto flex flex-col justify-center items-center shadow-2xl bg-slate-100 dark:bg-dark-secondary dark:shadow-none rounded-lg">
-            <div className="bg-primary-dark h-28 w-28 rounded-full flex justify-center items-center ">
+      <div className="flex flex-wrap justify-between items-center mt-10">
+        {data.map((el, i) => (
+          <div
+            key={i}
+            className="w-60 h-80 my-5  m-auto flex flex-col justify-center items-center shadow-2xl bg-slate-100 dark:bg-dark-secondary dark:shadow-none rounded-lg"
+          >
+            <div className="bg-primary-dark h-28 w-28 aspect-square rounded-full flex justify-center items-center ">
               {el.element}
             </div>
             <div className="my-5 text-xl text-primary-dark dark:text-white">

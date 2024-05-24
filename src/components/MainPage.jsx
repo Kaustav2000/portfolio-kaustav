@@ -8,9 +8,11 @@ const MainPage = () => {
   const { mode } = useContext(DarkModeContext);
 
   return (
-    <div className={`max-w-screen h-screen ${mode}`}>
+    <div className={`max-w-screen min-h-screen overflow-x-hidden ${mode}`}>
       <Header />
-      <Outlet />
+      <div className="mt-16">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

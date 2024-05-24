@@ -23,14 +23,14 @@ export default function CustomizedTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <div className="bg-slate-100 ml-5 w-80 min-h-40 p-5 m-auto flex flex-col justify-center items-center shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg">
+          <div className="bg-slate-100  w-80 portrait:w-fit min-h-40 p-5 m-auto flex flex-col justify-center items-center shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg">
             <div className="bg-white h-28 w-28 rounded-full flex justify-center items-center overflow-clip ">
               <img src={wiproImage} alt="wipro-logo" />
             </div>
             <div className="my-5 text-xl text-primary-dark dark:text-white">
               Project Engineer
             </div>
-            <div className="text-xs dark:text-white px-5">
+            <div className="text-xs dark:text-white px-5 portrait:hidden">
               <ul className="list-disc">
                 <li>
                   Troubleshoot and analyze problem reports to help determine
@@ -54,14 +54,14 @@ export default function CustomizedTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <div className="bg-slate-100 mr-5 w-80 min-h-40 p-5 m-auto flex flex-col justify-center items-center shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg">
+          <div className="bg-slate-100  w-80 portrait:w-fit min-h-40 p-5 m-auto flex flex-col justify-center items-center shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg">
             <div className="bg-white h-28 w-28 rounded-full flex justify-center items-center overflow-clip ">
               <img src={kreetiImage} alt="wipro-logo" />
             </div>
             <div className="my-5 text-xl text-primary-dark dark:text-white">
               Front End Developer
             </div>
-            <div className="text-xs dark:text-white px-5">
+            <div className="text-xs dark:text-white px-5 portrait:hidden">
               <ul className="list-disc text-left">
                 <li>
                   Developed a Job search and Listing Web application helping
@@ -97,14 +97,14 @@ export default function CustomizedTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <div className="bg-slate-100 ml-5 w-80 min-h-40 p-5 m-auto flex flex-col justify-center items-center shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg">
+          <div className="bg-slate-100  w-80 portrait:w-fit min-h-40 p-5 m-auto flex flex-col justify-center items-center shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg">
             <div className="bg-white h-28 w-28 rounded-full flex justify-center items-center overflow-clip ">
               <img src={cbnitsImage} alt="wipro-logo" />
             </div>
             <div className="my-5 text-xl text-primary-dark dark:text-white">
               Front End Developer
             </div>
-            <div className="text-xs dark:text-white px-5">
+            <div className="text-xs dark:text-white px-5 portrait:hidden">
               <ul className="list-disc text-left">
                 <li>
                   Zeullig Pharma- Worked on a Healthcare app in South Eastern

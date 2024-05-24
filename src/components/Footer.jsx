@@ -2,12 +2,12 @@ import { TbHexagonLetterKFilled } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <div className="flex bg-primary-dark justify-between items-center text-white dark:bg-dark-secondary w-full shadow-md py-4 px-28">
+    <div className="flex bg-primary-dark justify-between items-center text-white dark:bg-dark-secondary w-full shadow-md py-4 px-28 portrait:py-2 portrait:px-4">
       <div className="">
-        <TbHexagonLetterKFilled className=" text-5xl text-white" />{" "}
+        <TbHexagonLetterKFilled className=" text-5xl portrait:text-xl text-white" />{" "}
       </div>
 
-      <div className=" text-lg space-x-2">
+      <div className=" text-lg portrait:text-[8px] space-x-2 portrait:space-x-1">
         Made with{" "}
         <a
           href="https://react.dev/"

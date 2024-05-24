@@ -8,9 +8,12 @@ const MiniProjects = () => {
       <div className="text-center mb-3 m-auto text-primary-dark dark:text-white text-3xl font-bold">
         Mini Projects
       </div>
-      <div className="flex justify-between items-center">
-        {miniProjects.map((data) => (
-          <div className="w-60 min-h-60 bg-slate-200 p-2 m-auto shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg">
+      <div className="flex flex-wrap justify-between items-center">
+        {miniProjects.map((data, index) => (
+          <div
+            key={index}
+            className="w-60 my-7 min-h-60 bg-slate-200 p-2 m-auto shadow-2xl dark:bg-dark-secondary dark:shadow-none rounded-lg"
+          >
             <div className=" w-full overflow-clip rounded-md  ">
               <img src={data.imageUrl} alt="" />
             </div>
