@@ -10,3 +10,92 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: rgb(82, 82, 82); /* color of the scroll thumb */
 }
+
+/* 404 custom style */
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 52.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+.display {
+  margin-top: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32.5rem, 1fr));
+
+  &__img > img {
+    width: 100%;
+  }
+
+  &__content {
+    margin-left: 5rem;
+
+    @include respond(phone) {
+      margin-left: 0;
+    }
+
+    &--info {
+      font-size: 6rem;
+      line-height: 1.2;
+
+      @include respond(phone) {
+        font-size: 4.8rem;
+      }
+    }
+    &--text {
+      margin-top: 1.5rem;
+      font-family: "Space Mono", monospace;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.7;
+      width: 40rem;
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.btn,
+.btn:active,
+.btn:hover,
+.btn:focus {
+  margin-top: 5rem;
+  font-family: "Space Mono", monospace;
+  color: #fff;
+  background-color: #333333;
+  border: none;
+  outline: none;
+  padding: 2rem 4rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav {
+  font-family: "Inconsolata", monospace;
+  margin-top: 4rem;
+  margin-left: 7.7rem;
+  text-transform: uppercase;
+}
