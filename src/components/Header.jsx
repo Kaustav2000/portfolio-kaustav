@@ -76,7 +76,7 @@ const Header = () => {
         </div>
       </div>
 
-      <CustomDrawer open={openNav} side="left" setOpen={setOpenNav}>
+      <CustomDrawer open={openNav} side="bottom" setOpen={setOpenNav}>
         <div className="w-full h-full dark:text-white dark:bg-dark-secondary">
           {navigatorLinks.map((link) => {
             return link.disabled ? (
